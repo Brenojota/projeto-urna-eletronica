@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urna</title>
+    <link rel="icon" href="./image/urna.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+
+    </section>
+    <div class="urna">
+        <div class="tela">
+            <div class="divisao1">
+                <p>SEU VOTO PARA</p>
+                <p>PRESIDENTE:</p>
+                <br>
+                <div class="display" id="display">
+
+                </div>
+            </div>
+        </div>
+        <section class="teclado">
+            <div class="teclado-1">
+                <button class="botao" onclick="clicou('1')">1</button>
+                <button class="botao" onclick="clicou('2')">2</button>
+                <button class="botao" onclick="clicou('3')">3</button>
+            </div>
+            <div class="teclado-2">
+                <button class="botao" onclick="clicou('4')">4</button>
+                <button class="botao" onclick="clicou('5')">5</button>
+                <button class="botao" onclick="clicou('6')">6</button>
+            </div>
+            <div class="teclado-3">
+                <button class="botao" onclick="clicou('7')">7</button>
+                <button class="botao" onclick="clicou('8')">8</button>
+                <button class="botao" onclick="clicou('9')">9</button>
+            </div>
+            <div class="teclado-4">
+                <button class="botao" onclick="clicou('0')">0</button>
+            </div>
+
+            <div class="bcc">
+                <button class="branco" onclick="branco('')">BRANCO</button>
+                <button class="corrige" onclick="corrige('')">CORRIGE</button>
+                <button class="confirma" onclick="confirma()">CONFIRMA</button>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="sessao">
+        <div>
+            <button class="botao-sessao" onclick="sessao()">FINALIZAR SESSÃO</button>
+        </div>
+
+    </div>
+
+    <audio src = "./sounds/confirma.mp3" id="confirma"></audio>
+    <script src="./script.js"></script>
+</body>
+
+</html>
